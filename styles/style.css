@@ -119,6 +119,7 @@
 /* features related style start  */
 .features {
   padding: 0 61px;
+  margin-top: 85px;
 }
 
 .features .features-image img {
@@ -144,8 +145,64 @@
 }
 /* features related style end */
 
+/* experience related style start  */
+.experience {
+  margin-top: 100px;
+}
+
+.experience-title {
+  border-left: 5px solid rgb(255, 144, 14);
+  padding-left: 21px;
+}
+
+.experience-info {
+  margin-top: 39px;
+}
+
+.experience-details {
+  max-width: 586px;
+  margin-top: 24px;
+}
+
+.experience-category {
+  margin-top: 30px;
+  padding: 30px 42px 30px 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+}
+
+.experience-category h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 10px;
+}
+
+.experience-image {
+  margin-left: 54px;
+  padding: 0px 0px 77px 92px;
+}
+
+.experience-count {
+  margin-top: -100px;
+  margin-left: -100px;
+}
+.year {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+}
+
+.experience-count .experience {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+/* experience related style end */
+
 /* for small device */
 @media screen and (max-width: 576px) {
+  /* navbar and banner section  */
   .navnar {
     flex-direction: column;
   }
@@ -161,6 +218,41 @@
   .navnar h3 {
     margin-bottom: 10px;
   }
+
+  /* feature section  */
+  .features-image {
+    margin-top: 40px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .features-info {
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  /* experience section  */
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-image {
+    margin-left: 0px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .experience-image img {
+    width: 100%;
+  }
+
+  .experience-count {
+    margin-top: -100px;
+    margin-left: 10px;
+  }
 }
 
 /* for medium device */
@@ -168,5 +260,40 @@
   .navnar ul li {
     list-style: none;
     margin-left: 20px;
+  }
+
+  /* feature section  */
+  .features-image {
+    margin-top: 40px;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .features-info {
+    margin-top: 40px;
+    padding-left: 0;
+  }
+
+  /* experience section  */
+
+  .experience {
+    flex-direction: column;
+  }
+
+  .experience-image {
+    margin-left: 0px;
+    padding: 0;
+    margin-top: 50px;
+  }
+
+  .experience-image img {
+    width: 100%;
+  }
+
+  .experience-count {
+    margin-top: -100px;
+    margin-left: 10px;
   }
 }
