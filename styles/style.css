@@ -200,6 +200,85 @@
 }
 /* experience related style end */
 
+/* some facts start  */
+.facts {
+  margin-top: 90px;
+}
+
+.facts-details {
+  max-width: 552px;
+  margin-top: 18px;
+}
+
+.fact-box {
+  width: 242px;
+  height: 242px;
+  border: 1px solid rgb(255, 144, 14);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fact-box h4 {
+  color: rgb(66, 66, 66);
+}
+.fact-box p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.facts-container {
+  margin-left: 60px;
+  margin-top: 80px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* some facts end */
+
+/* sponsor related style start  */
+.sponsor {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.sponsor h2 {
+  margin-bottom: 24px;
+}
+
+.sponsor p {
+  width: 542px;
+  margin: 0 auto;
+}
+
+.sponsor-image {
+  margin-top: 50px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-image img {
+  filter: grayscale(100%);
+}
+/* sponsor related end */
+
+/* footer related style start */
+footer {
+  background-color: rgb(255, 244, 231);
+}
+.footer {
+  margin-top: 130px;
+
+  padding: 39px 0;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: center;
+}
+/* footer related style end  */
+
 /* for small device */
 @media screen and (max-width: 576px) {
   /* navbar and banner section  */
@@ -253,6 +332,28 @@
     margin-top: -100px;
     margin-left: 10px;
   }
+
+  /* facts section  */
+  .facts h2 {
+    margin-left: 10px;
+  }
+  .facts h2 + p {
+    margin-left: 10px;
+  }
+
+  .facts-container {
+    margin-left: 10px;
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* sponsonr section  */
+  .sponsor-image {
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
 }
 
 /* for medium device */
@@ -295,5 +396,27 @@
   .experience-count {
     margin-top: -100px;
     margin-left: 10px;
+  }
+
+  /* facts section  */
+  .facts h2 {
+    margin-left: 10px;
+  }
+  .facts h2 + p {
+    margin-left: 10px;
+  }
+
+  .facts-container {
+    margin-left: 30px;
+    margin-top: 80px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* sponsonr section  */
+  .sponsor-image {
+    margin-top: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
   }
 }
