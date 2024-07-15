@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* font for website  */
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* shared css style  */
+.display-flex {
+  display: flex;
+}
+
+.display-grid {
+  display: grid;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* gray one  */
+.gray-one {
+  color: rgb(19, 19, 19);
+}
+/* gray two  */
+.gray-two {
+  color: rgb(114, 114, 114);
+}
+
+.primary {
+  color: rgb(255, 144, 14);
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+
+.heading2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 53px;
+}
+
+.btn-primary {
+  padding: 20px 24px;
+  background-color: rgb(255, 144, 14);
+  border: none;
+  border-radius: 8px;
+}
+
+/* navbar related style start */
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+
+.navnar {
+  padding: 50px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navnar h3 {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+
+.navnar ul li {
+  list-style: none;
+  margin-left: 60px;
+}
+.navnar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(66, 66, 66);
+}
+
+/* navbar related style end */
+
+/* banner related style start */
+.banner .banner-info h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 75px;
+  margin-bottom: 25px;
+}
+
+.banner-info {
+  max-width: 862px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.banner .btn-primary {
+  margin-top: 32px;
+}
+.banner .banner-image {
+  margin-top: 50px;
+  padding-bottom: 45px;
+}
+
+.banner .banner-image img {
+  width: 100%;
+}
+/* banner related style end */
+
+/* features related style start  */
+.features {
+  padding: 0 61px;
+}
+
+.features .features-image img {
+  width: 100%;
+}
+.features-image {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.features-info {
+  max-width: 537px;
+  margin: auto 0;
+  padding-left: 73px;
+}
+
+.features-info p {
+  margin-top: 24px;
+}
+
+.features-info button {
+  margin-top: 32px;
+}
+/* features related style end */
+
+/* for small device */
+@media screen and (max-width: 576px) {
+  .navnar {
+    flex-direction: column;
+  }
+
+  .navnar ul {
+    flex-direction: column;
+  }
+  .navnar ul li {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .navnar h3 {
+    margin-bottom: 10px;
+  }
+}
+
+/* for medium device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .navnar ul li {
+    list-style: none;
+    margin-left: 20px;
+  }
+}
